@@ -1,0 +1,358 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  font-family: 'Ubuntu', sans-serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'Ubuntu', sans-serif;
+}
+html {
+  font-size: 62.5%;
+}
+a {
+  text-decoration: none;
+}
+.container {
+  max-width: 880px;
+  width: 100%;
+  margin: 30px auto;
+  border-radius: 12px;
+}
+@media ( max-width: 500px ) {
+  .container {
+    margin: 0;
+  }
+}
+.cover-img {
+  background-image: url(../img/repeat.jpg);
+}
+.cover-img nav {
+  display: flex;
+  justify-content: center;
+  font-size: 1.6rem;
+  border: solid #26422a 5px;
+}
+@media ( max-width: 500px ) {
+  .cover-img nav {
+    flex-direction: column;
+    border: none;
+  }
+}
+.cover-img nav a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: green;
+  border: solid black 1px;
+  padding: 1%;
+  margin: 0 0.5%;
+  border-radius: 8px;
+  background-color: #f1ffe9;
+}
+@media ( max-width: 500px ) {
+  .cover-img nav a {
+    border-radius: 0;
+    padding: 0;
+    margin: 0;
+    height: 150px;
+  }
+}
+.cover-img nav img {
+  margin: 0 0.5%;
+}
+@media ( max-width: 500px ) {
+  .cover-img nav img {
+    height: 200px;
+    width: 50%;
+    margin-left: 96px;
+  }
+}
+.slider-bar {
+  position: relative;
+}
+.slider-bar .banner {
+  width: 100%;
+  display: none;
+}
+.slider-bar .current-img {
+  display: block;
+  border-radius: 12px;
+  overflow: hidden;
+  border: solid #2d452d 5px;
+}
+@media ( max-width: 500px ) {
+  .slider-bar .current-img {
+    border-radius: 0;
+  }
+}
+.slider-bar .btn {
+  display: inline-block;
+  font-size: 4.5rem;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  background-color: #b9ffbb;
+  text-align: center;
+  color: #3f5937;
+  border: solid black 1px;
+}
+.slider-bar .left {
+  position: absolute;
+  left: 10%;
+  top: 40px;
+}
+.slider-bar .right {
+  position: absolute;
+  right: 10%;
+  top: 40px;
+}
+.slider-bar .pic-num {
+  font-size: 3rem;
+  position: absolute;
+  top: 70%;
+  left: 38%;
+  color: white;
+}
+footer p {
+  font-size: 4rem;
+  background-color: #dbfffa;
+  text-align: center;
+  padding: 33px 1%;
+  font-family: 'Kalam', cursive;
+}
+.tree-types {
+  margin-top: 30px;
+  border-radius: 6px;
+}
+@media ( max-width: 500px ) {
+  .tree-types {
+    margin: 0;
+  }
+}
+.tree-types .tree-info {
+  background-color: #cdffbd;
+  height: 438px;
+  padding: 1%;
+  display: none;
+  overflow: scroll;
+}
+.tree-types .tree-info h1 {
+  font-size: 5rem;
+  text-align: center;
+  margin-top: 30px;
+  font-family: 'Galindo', cursive;
+}
+.tree-types .tree-info p {
+  font-size: 2.6rem;
+  margin: 40px 4% 0 4%;
+  font-family: 'Coming Soon', cursive;
+}
+.tree-types .add-tree-info {
+  display: block;
+}
+.tree-types .tree-links {
+  display: flex;
+  border: solid black 1px;
+  height: 100px;
+  width: 100%;
+}
+.tree-types .tree-links .all {
+  background-color: white;
+  color: black;
+  width: 25%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3rem;
+  border-right: 1px solid black;
+}
+.tree-types .tree-links .all:hover {
+  background-color: black;
+  color: white;
+}
+.tree-types .tree-links .Oak {
+  background-color: #c6ffc3;
+  color: green;
+  width: 25%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3rem;
+}
+.tree-types .tree-links .Oak:hover {
+  background-color: green;
+  color: #c6ffc3;
+}
+.tree-types .tree-links .apple {
+  background-color: #ffdddd;
+  color: red;
+  width: 25%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3rem;
+  border-right: 1px solid black;
+}
+.tree-types .tree-links .apple:hover {
+  background-color: red;
+  color: #ffdddd;
+}
+.tree-types .tree-links .mapple {
+  background-color: #ffda97;
+  color: orange;
+  width: 25%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3rem;
+  border-right: 1px solid black;
+}
+.tree-types .tree-links .mapple:hover {
+  background-color: orange;
+  color: #ffda97;
+}
+.tree-types .tree-section {
+  display: flex;
+}
+.tree-types .tree-section .trees {
+  width: 25%;
+  height: 25%;
+  display: none;
+}
+.tree-types .tree-section .show-trees {
+  display: block;
+}

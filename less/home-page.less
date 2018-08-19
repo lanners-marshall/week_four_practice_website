@@ -1,0 +1,87 @@
+.tree-types {
+  margin-top: 30px;
+  border-radius: 6px;
+  @media @phone {
+  	margin: 0;
+  }
+
+  .tree-info {
+  	background-color: #cdffbd;
+    height: 438px;
+    padding: 1%;
+    display: none;
+    overflow: scroll;
+
+    h1 {
+		  font-size: 5rem;
+		  text-align: center;
+		  margin-top: 30px;
+		  font-family: 'Galindo', cursive;
+    }
+    p {
+	    font-size: 2.6rem;
+	    margin: 40px 4% 0 4%;
+	    font-family: 'Coming Soon', cursive;
+    }
+  }
+
+  .add-tree-info {
+  	display: block;
+  }
+
+  .tree-links{
+	  display: flex;
+	  border: solid black 1px;
+	  height: 100px;
+	  width: 100%;
+
+	  .all{
+	  	.tabs(black, white);
+	  	border-right: 1px solid black;
+
+	  }
+	  .all:hover {
+	  	.tabs-hover(white, black);
+	  }
+
+	  .Oak{
+	  	.tabs(green, #c6ffc3);
+	  }
+	  .Oak:hover {
+	  	.tabs-hover(#c6ffc3, green);
+	  }
+
+	  .apple{
+	  	.tabs(red, #ffdddd);
+	  	border-right: 1px solid black;
+	  }
+	  .apple:hover {
+	  	.tabs-hover(#ffdddd, red);
+	  }
+
+	  .mapple {
+	  	.tabs(orange, #ffda97);
+	  	border-right: 1px solid black;
+	  }
+
+	  .mapple:hover {
+	  	.tabs-hover(#ffda97, orange);
+	  }
+	}
+
+	.tree-section {
+		display: flex;
+		.trees{
+		  width: 25%;
+		  height: 25%;
+		  display: none;
+		}
+		.show-trees{
+			display: block;
+		}
+	}
+
+}
+
+
+

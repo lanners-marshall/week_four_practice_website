@@ -1,0 +1,92 @@
+.cover-img {
+	background-image: url(../img/repeat.jpg);
+	nav {
+		display: flex;
+	  justify-content: center;
+
+	  @media @phone {
+	  	flex-direction: column;
+	  	border: none;
+	  }
+
+	  font-size: 1.6rem;
+	  border: solid #26422a 5px;
+		a {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			color: green;
+	    border: solid black 1px;
+	  	padding: 1%;
+	    margin: 0 .5%;
+	    border-radius: 8px;
+	    background-color: #f1ffe9;
+	    @media @phone {
+	    	border-radius: 0;
+	    	padding: 0;
+	    	margin: 0;
+	    	height: 150px
+	    }
+		}
+		img {
+			margin: 0 .5%;
+			@media @phone {
+	    	height: 200px;
+		    width: 50%;
+		    margin-left: 96px;
+	    }
+		}
+	}
+}
+
+.slider-bar{
+	position: relative;
+	.banner {
+		width: 100%;
+		display: none;
+	}
+
+	.current-img {
+		display: block;
+    border-radius: 12px;
+    overflow: hidden;
+    border: solid #2d452d 5px;
+    @media @phone {
+    	border-radius: 0;
+    }
+	}
+
+	.btn {
+		display: inline-block;
+	  font-size: 4.5rem;
+	  border-radius: 50%;
+	  width: 50px;
+	  height: 50px;
+	  background-color: #b9ffbb;
+	  text-align: center;
+	  color: #3f5937;
+	  border: solid black 1px;
+	}
+
+	.left {
+		position: absolute;
+    left: 10%;
+    top: 40px
+  }
+
+  .right {
+    position: absolute;
+    right: 10%;
+    top: 40px
+	}
+	.pic-num {
+		font-size: 3rem;
+    position: absolute;
+    top: 70%;
+    left: 38%;
+    color: white;
+	}
+}
+
+
+
